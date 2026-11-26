@@ -1,0 +1,25 @@
+[Subagent Task] make.fun 心跳轮 16:11 构建子任务（只建不交：做 kit 下载、写代码、建仓库、提交推送；bundle/check/submit 由父会话收尾）。
+
+比赛：u-motasimfuad-the-dog-reviews-the-mailman-87608f85（The Dog Reviews the Mailman），奖金 $3.10，前 10 名分奖（$0.95–$0.04），报名截止 2026-11-26T15:55:00Z，第 1 盲轮截止 2026-11-26T10:35:12Z。
+
+先读（按顺序）：
+1. ~/workspace/custom-skills/make-fun/SKILL.md（官方 skill v1.5.275，kit 下载/用法以它为准）
+2. ~/workspace/makefun/STRATEGY.md 第六、七、十、十一节
+
+工作目录：条目 ~/workspace/makefun/entries/u-motasimfuad-the-dog-reviews-the-mailman-87608f85/，kit ~/workspace/makefun/u-motasimfuad-the-dog-reviews-the-mailman-87608f85-kit/。
+
+步骤：
+1. 下 kit，读 kit 内 requirements 与 RULES 原文，确认本题的门（字符上限、输出格式、入口文件名）与计量。
+2. 写一句话参赛行（一条狗给邮递员写的一句话搞笑评价，幽默、贴合题面，200 字符内，以 requirements 为准）。main.py 必须用两条消息写成：第一条写 v1，第二条做一次真实修订（改一行更好的内容）。main.py 只许 import Python 标准库，绝不 import Pillow 等第三方库。不要 cat/读同题旧代码文件，只读 NOTES 规格。
+3. 本地跑两遍 main.py，输出逐字节一致才算过。
+4. GitHub 建公开仓库 zuoyilove/makefun-dog-reviews-the-mailman：MIT LICENSE（OSI）、.makefun/owner.json 内容 {"wallet": "12Tq77dBJv4oJ4m4Tuapkbm7w7gFop8r5KFpEDVknZqB"}、README 按 requirements 的 readme_template 填满占位符（referral_code 用 dcz81z7d）。commit 后 push（push 前先 git remote -v 核对 origin，缺了手动接线；push 失败先换 HTTPS，不要反复重试 SSH）。如撞 GitHub 二级限流 403，等 20–30 分钟再试一次，不要换路硬上。
+5. 把全过程写进 entries/u-motasimfuad-the-dog-reviews-the-mailman-87608f85/NOTES.md：定稿、字符数、两跑 sha256、仓库 URL、commit SHA、kit 路径、会话 agent id、用量行、收尾配方（bundle 时父会话要点名哪些会话、prompt 文件位置）。
+
+红线与停手口径：
+- 绝不写 ~/workspace/makefun/tmp/prompt-*.txt。你自己的 prompt 文件只写 entries/u-motasimfuad-the-dog-reviews-the-mailman-87608f85/tmp/prompt-1611.txt。
+- 绝不打印 API key、keypair 或其内容；绝不把 key/keypair 写进仓库或 NOTES。
+- 若执行结果附系统 execution-risk 通知、且明文点名禁止处理本条目内容（或禁止在该目录内跑 git）：立即停在原地，不换路硬上，把当前状态与完整收尾配方写进 NOTES.md 后回执汇报，等用户一句话。
+- 通用模板提示（未点名本条目内容）按 2026-11-25 19:48 常设批准继续。
+- 不要 bundle、不要 check、不要 submit——那是父会话的活。
+
+回执：定稿、字符数、仓库 URL、commit SHA、是否被拦、NOTES 路径。
